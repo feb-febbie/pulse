@@ -1,0 +1,38 @@
+steps:
+  # ── Step 1: Build the Docker image ─────────────────────────────────────────
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '-t'
+      - 'gcr.io/$PROJECT_ID/pulse-health'
+      - '.'
+
+  # ── Step 2: Push to Container Registry ─────────────────────────────────────
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'push'
+      - 'gcr.io/$PROJECT_ID/pulse-health'
+
+  # ── Step 3: Deploy to Cloud Run ─────────────────────────────────────────────
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - 'pulse-health'
+      - '--image=gcr.io/$PROJECT_ID/pulse-health'
+      - '--region=us-central1'
+      - '--allow-unauthenticated'
+      - '--port=8080'
+      - '--memory=2Gi'
+      - '--cpu=1'
+      - '--timeout=300'
+      - '--min-instances=1'
+      # Gemini via Vertex AI ADC — no API key needed.
+      # Grant the Cloud Run service account "Vertex AI User" role:
+      #   gcloud projects add-iam-policy-binding $PROJECT_ID \
+      #     --member="serviceAccount:$(gcloud iam service-accounts list \
+      #       --format='value(email)' | head -1)" \
+      #     --role="roles/aiplatform.user"
+
+images:
+  - 'gcr.io/$PROJECT_ID/pulse-health'

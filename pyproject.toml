@@ -1,0 +1,29 @@
+[project]
+name = "pulse-health-agent"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    # LLM + agent framework
+    "anthropic>=0.40.0",
+    "openai>=1.30.0",
+    "google-auth>=2.0.0",
+    "google-genai>=1.0.0",
+    "langgraph>=0.2.55",
+
+    # Frontend
+    "streamlit>=1.40.0",
+
+    # RAG / vector store
+    "sentence-transformers>=3.0.0",
+    "faiss-cpu>=1.7.4",
+    "torch>=2.0.0,<2.3; sys_platform == 'darwin' and platform_machine == 'x86_64'",
+    "transformers>=4.40.0,<4.47",
+
+    # Storage
+    "google-cloud-firestore>=2.16.0",
+
+    # Utilities
+    "python-dotenv>=1.0.0",
+    "numpy>=1.26.0,<2.0",
+    "requests>=2.31.0",
+]
