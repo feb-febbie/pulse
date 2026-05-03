@@ -1,3 +1,13 @@
+## 📄 Business Document
+
+> **This project includes a formal business case** — a 3-page strategic document covering the market problem, unit economics (98.8% gross margin), competitor landscape, and how every technical architecture decision maps to a business requirement.
+
+### 👉 [Read the Business Case (PDF)](./PulseCare_Business_Case.pdf)
+
+*PulseCare: Strategic Business Case & Architecture Alignment — February Jiang*
+
+---
+
 # 🩺 PulseCare: AI-Powered Senior Health Monitoring
 
 **PulseCare gives adult children the visibility they need to look after aging parents — without surveillance, without alarm, without friction.**
