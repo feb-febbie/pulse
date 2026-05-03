@@ -10,13 +10,11 @@ A senior describes how they're feeling in natural language. PulseCare listens, l
 
 ## 🔗 Live Demo Links
 
-> Replace `YOUR_APP_URL` with your deployed Cloud Run or Streamlit URL.
-
 | Page | URL | Who uses it |
 |------|-----|-------------|
-| **Caregiver Dashboard** | `YOUR_APP_URL/?view=caregiver` | Sarah — sees alerts, watch data, check-in history |
-| **Senior Interface** | `YOUR_APP_URL/?view=senior` | Margaret — talks to Pulse, grows the garden |
-| **Patient Profile Setup** | `YOUR_APP_URL/?view=setup` | Caregiver — fills in Margaret's medical background |
+| **Caregiver Dashboard** | https://pulse-health-y367agrziq-uc.a.run.app/?view=caregiver | Sarah — sees alerts, watch data, check-in history |
+| **Senior Interface** | https://pulse-health-y367agrziq-uc.a.run.app/?view=senior | Margaret — talks to Pulse, grows the garden |
+| **Patient Profile Setup** | https://pulse-health-y367agrziq-uc.a.run.app/?view=setup | Caregiver — fills in Margaret's medical background |
 
 ---
 
@@ -26,8 +24,8 @@ A senior describes how they're feeling in natural language. PulseCare listens, l
 
 Open **two browser windows side by side**:
 
-- **Left window** → `YOUR_APP_URL/?view=caregiver` (Sarah's dashboard)
-- **Right window** → `YOUR_APP_URL/?view=senior` (Margaret's chat)
+- **Left window** → https://pulse-health-y367agrziq-uc.a.run.app/?view=caregiver (Sarah's dashboard)
+- **Right window** → https://pulse-health-y367agrziq-uc.a.run.app/?view=senior (Margaret's chat)
 
 Talk to Pulse in the right window. Watch the left window update within 3 seconds — no refresh needed. The caregiver dashboard auto-refreshes live.
 
@@ -41,7 +39,7 @@ Talk to Pulse in the right window. Watch the left window update within 3 seconds
 
 ### 🔄 Reset the demo (clears all live check-ins, re-seeds 14-day history)
 
-Visit: **`YOUR_APP_URL/?reset=1`**
+Visit: **https://pulse-health-y367agrziq-uc.a.run.app/?reset=1**
 
 This wipes all check-ins added during the demo, restores the 14-day story arc (baseline → gradual decline → elevated fall risk), and lands you back on the caregiver home tab — ready to demo again in under 3 seconds. The seeded history stays intact; only the live entries you added are removed.
 
