@@ -4,6 +4,8 @@
 
 ### 👉 [Read the Business Case (PDF)](./PulseCare_Business_Case.pdf)
 
+### 👉 [View the Pitch Deck (PDF)](./PulseCare_Pitch_Deck.pdf)
+
 *PulseCare: Strategic Business Case & Architecture Alignment — February Jiang*
 
 ---
